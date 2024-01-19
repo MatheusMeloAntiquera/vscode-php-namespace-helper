@@ -59,6 +59,8 @@ export function activate(context: vscode.ExtensionContext) {
       () => phpHelper.generateNamespace()
     )
   );
+  
+  //@todo: create command to group classes with same namespace
 
   context.subscriptions.push(
     vscode.workspace.onWillSaveTextDocument((event) => {
